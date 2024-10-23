@@ -5,21 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight Conversion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
 
 
     <form id="form">
-        <select name="unit1" id="unit1">
-            <option value="pounds" class="pounds">Pounds</option>
-            <option value="ounces" class="ounces">Ounces</option>
-            <option value="grams" class="grams">Grams</option>
-            <option value="kilograms" class="kilograms">Kilograms</option>
-        </select>
+        <div id="form-inputs">
+            <input id="amount" type="number" placeholder="amount">
+            <select name="unit1" id="unit1">
+                <option value="pounds" class="pounds">Pounds</option>
+                <option value="ounces" class="ounces">Ounces</option>
+                <option value="grams" class="grams">Grams</option>
+                <option value="kilograms" class="kilograms">Kilograms</option>
+            </select>
+        </div>
+        <p>To</p>
+
+        <div id="result-container">
+            <select name="unit2" id="unit2">
+                <option value="pounds" class="pounds">Pounds</option>
+                <option value="ounces" class="ounces">Ounces</option>
+                <option value="grams" class="grams">Grams</option>
+                <option value="kilograms" class="kilograms">Kilograms</option>
+            </select>
+
+            <p>=</p>
+
+            <div id="answer-box">
+                <p id="result"></p>
+            </div>
+
+        </div>
+
+
+
+        <button id="submit-btn" type="submit">Convert</button>
     </form>
 
-    <button id="submit-btn" type="submit">Convert</button>
+
 </body>
 
 </html>

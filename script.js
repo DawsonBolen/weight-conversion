@@ -8,6 +8,7 @@ const result = document.getElementById('result');
 //1 pound = 16 ounce
 
 //we can ignore this when we convert between ounces and pounds. for that conversion, 1 pound = 16 ounces
+
 const grams = 1;
 const kilograms = 1000;
 const pounds = 453.592

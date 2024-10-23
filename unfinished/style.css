@@ -6,4 +6,83 @@
 
 body {
     height: 100vh;
+    background-color: #e0e1dd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 400px;
+    border: 2px solid #1b263b;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#result-container {
+    display: flex;
+    gap: 20px;
+}
+
+#answer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #1b263b;
+    min-width: 80px;
+    width: fit-content;
+}
+
+select,
+input {
+    padding: 5px;
+    border: 1px solid #1b263b;
+}
+
+#form-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+#amount {
+    width: 80px;
+    height: 40px;
+}
+
+#unit2 {
+    width: 200px;
+    height: 40px;
+}
+
+#unit1 {
+    width: 200px;
+    height: 40px;
+}
+
+#submit-btn {
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    background-color: #1b263b;
+    color: white;
+    border: none;
+
+}
+
+#submit-btn:hover {
+    background-color: #415a77;
 }
